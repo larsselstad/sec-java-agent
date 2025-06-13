@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Result</title>
+</head>
+<body>
+    <h1>Result</h1>
+    <div th:if="${errorMessage}" style="color:red;">
+        <p th:text="${errorMessage}"></p>
+    </div>
+    <p>Name: <span th:text="${formInput.name}"></span></p>
+    <p>Phone number: <span th:text="${formInput.phonenumber}"></span></p>
+    <p>E-mail: <span th:text="${formInput.email}"></span></p>
+</body>
+</html>
